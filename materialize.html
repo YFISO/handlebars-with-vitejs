@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    
+            
+</head>
+<body style="background-color: yellowgreen;">
+    <div class="section">
+
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 my-auto">
+            <h1>{{data.user.fullName}}</h1>
+          </div>
+          <div class="col-md-6">
+            <img src="{{data.user.photo}}" width="250px">
+          </div>
+    
+        </div>
+
+      </div>
+  </div>
+
+  <section class="section mt-5">
+    <div class="container">
+      <h1>{{data.city.name}}</h1>
+    </div>
+    <div class="container">
+    <div class="row text-center">
+    <div class="col-md-6">
+      <img src="{{data.city.photo}}">
+    </div>
+    <div class="col-md-6">
+      <p>{{data.city.description}}</p>
+
+    </div>
+  </div>
+</div>
+  </section>
+  <section class="section mt-5">
+    <div class="container">
+            <h1>{{data.foreignLanguage.language}}</h1>
+          </div>
+            <div class="container">
+            <table class="table table-bordered">
+                <tr>
+                  <th scope="col">English Phrase</th>
+                  <th scope="col">Portuguese Phrase</th>
+                </tr>
+                {{#each data.foreignLanguage.phrases}}
+                <tr>
+                    <td>{{englishPhrase}}</td>
+                    <td>{{foreignLanguage}}</td>
+                </tr>
+                {{/each}}
+              </table> 
+        </div>
+  </section>
+  <section class="section mt-5">
+    <div class="container">
+            <h1>FavouriteSubjects</h1><br>
+          <div class="container-fluid">
+          <div class="row">
+            {{#each data.favouriteSubjects}}
+            <div class="col-md-2">
+              <h6>{{name}}</h6>
+              <p class="lh-sm">{{description}}</p>
+            </div>
+            <div class="col-md-2">
+              <img src="{{photo}}" alt="photo" class="img-fluid" width="150px">
+            </div>
+            {{/each}}
+          </div>
+          </div>
+    </div>
+  </section>
+</body>
+</html>

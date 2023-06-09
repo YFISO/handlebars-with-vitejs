@@ -1,0 +1,42 @@
+{
+    "user" : {
+        "fullName": "S'fiso Moyane",
+        "photo" : "images/sifiso pictures.jpg"
+        
+        
+    
+    },
+    "city" : {
+        "name" : "Johannesburg",
+        "photo" : "images/Johannesburg.jpg",
+        "description" : "Johannesburg, often referred to as Joburg or Jozi, is a city that exudes energy and ambition. It stands as a testament to the remarkable transformation that South Africa has undergone in recent decades. Once a small gold-mining town, Johannesburg has grown into a sprawling urban center and is now considered the economic powerhouse of the country"
+    },
+    "foreignLanguage" : {
+        "language" : "English",
+        "phrases" : [{
+            "englishPhrase" : "How are you?",
+            "foreignLanguage" : "Tudo bem?"
+        },
+        {
+            "englishPhrase" : "How is work?",
+            "foreignLanguage" : "Como anda o trabalho?"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Mathematics",
+            "description" : "mathematics seeks to understand and describe the patterns and relationships that exist in the world around us. It provides tools and methods for analyzing and solving problems, making predictions, and making sense of complex phenomena.",
+            "photo" : "images/calculating.png"
+        },
+        {
+            "name" : "Accounting",
+            "description" : "accounting is to provide accurate and reliable financial information to users such as management, investors, creditors, and government agencies. This information helps in evaluating the financial position, profitability, and cash flow of an organization.",
+            "photo" : "images/accountant.png"
+        },
+        {
+            "name" : "Business",
+            "description" : "business is to create value by offering products or services that satisfy customer demands. By identifying market opportunities and addressing customer needs, businesses aim to generate revenue and achieve profitability.",
+            "photo" : "images/business.png"
+        }
+    ]
+}
